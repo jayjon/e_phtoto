@@ -14,5 +14,10 @@ public class PhotoBiz {
 		photoDAO = new PhotoDAO();
 		return photoDAO.getAllPhotos();
 	}
+	public List<Photo> getCateGoryPhotos(int id) throws SQLException {
+		photoDAO = new PhotoDAO();
+		return photoDAO.getAllPhotosByClassId(id);
+	}
+	
 
 }
